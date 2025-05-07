@@ -11,7 +11,6 @@ import {
 
 export const Feed: FC = () => {
   const orders = useSelector(selectOrders);
-  const isLoading = useSelector(selectIsFeedsLoading);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getOrders());
